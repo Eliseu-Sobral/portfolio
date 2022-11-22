@@ -109,6 +109,11 @@ body span {
   width: 450px;
   height: 50px;
 }
+@media (max-width: 600px) {
+  .main-preset form {
+    width: 300px;
+  }
+}
 .main-preset .send {
   margin: 0;
   color: #fff;
@@ -120,6 +125,11 @@ body span {
   font-size: 1.4rem;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  .main-preset .send {
+    width: 400px;
+  }
+}
 .main-preset .send:hover {
   background-color: #36b803;
   box-shadow: 0 0 12px #36b803, 0 0 12px #36b803, 0 0 12px #36b803, 0 0 12px #36b803, 0 0 12px #36b803;
@@ -129,6 +139,12 @@ body span {
   height: 50px;
   padding: 5px 5px 5px 15px;
   outline: none;
+}
+@media (max-width: 600px) {
+  .main-preset .email {
+    width: 400px;
+    margin-bottom: 5px;
+  }
 }
 .main img {
   max-width: 80%;

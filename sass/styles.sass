@@ -78,18 +78,23 @@ body
     &-preset
         @include mixins.mobile
 
+
         height: 500px
         
         h4 
             color: variables.$text-color
             font-size: 2rem
             margin-top: 5rem
+            
+
         h1 
             font-size: 4rem
             margin: 0
         form
             width: 450px
             height: 50px
+            @include mixins.mobile 
+                width: 300px
         .send
             margin: 0
             color: variables.$text-color
@@ -100,6 +105,8 @@ body
             width: 94px
             font-size: 1.4rem
             font-weight: bold
+            @include mixins.mobile 
+                width: 400px
             &:hover
                 background-color: variables.$text-green
                 box-shadow: 0 0 12px variables.$text-green,0 0 12px variables.$text-green,0 0 12px variables.$text-green,0 0 12px variables.$text-green,0 0 12px variables.$text-green,
@@ -109,6 +116,9 @@ body
             height: 50px
             padding: 5px 5px 5px 15px
             outline: none
+            @include mixins.mobile 
+                width: 400px
+                margin-bottom: 5px
     
         
         
