@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Portfolio</title>
+<style>
+    :root{
+       --var-bg-color: #191919;
+       --var-sec-bg-color:#252525;
+       --var-btn-color:#7855c3;
+       --var-text-green:#36b803;
+       --var-text-color: #fff;
+    }
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header-logo">Portfo<span>lio</span></h2>
+        <nav class="header-navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Conhecimentos</a></li>
+                <li><a href="#">Fale comigo</a></li>
+            </ul>
+        </nav>
+        <div class="header-sanduiche">
+            <div>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <div class="main-preset">
+                <h4>Olá, meu nome é </h4>
+                <h1>Eliseu <span>Sobral</span></h1>
+                <h3>Eu sou programador</h3>
+                <form method="post">
+                    <input type="email" name="email" id="mail" placeholder="Digite seu email" class="email">
+                    <input type="submit" name="submit" value="Enviar" class="send">
+                </form>
+            </div>
+        </div>
+        <div class="main-section">
+            <div class="main-img">
+                <img src="./img/eliseu.jpg" alt="">
+            </div>
+            <div class="main-carddesc">
+                
+                <h2>Sobre Mim</h2>
+                <h5>Desenvolvedor <span>& Consultor</span></h5>
+    
+    
+                <div class="main-carddesc-text">
+                    <p>Formado na Fatec de Mauá no curso de informática com enfase em negócios tenho conhecimentos
+                        em
+                        PHP,
+                        Python, HTML, CSS, Javascript,
+                        Wordpress e as melhores práticas de gestão que produzem os melhores resultados. </p>
+                    <p>Utilizo os frameworks Laravel, Django, Flask, NodeJS para produzir sistemas de qualidade para
+                        o
+                        seu
+                        negócio. </p>
+                </div>
+                <div class="main-carddesc-button">
+                    <input type="button"value="Vamos Conversar"/>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-service">
+            <div class="main-service-card" id="card-1" data-tilt data-tilt-glare data-tilt-max-glare="0.1" data-tilt-max="50"
+            data-tilt-speed="500" data-tilt-perpective="1000">
+                <div class="main-service-card-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="main-service-card-title">
+                    <h5>Desenvolvimento de sites</h5>
+                </div>
+                <div class="main-service-card-text">
+                    Todo site deve ser construído com dois objetivos principais: em primeiro lugar, ele precisa
+                    funcionar em todos os dispositivos. Em segundo lugar, tem de ser o mais rápido possível.
+                </div>
+                <div class="main-service-card-button">
+                    <a class="button" href="#">Saiba Mais</a>
+                </div>
+
+            </div>
+            <div class="main-service-card" id="card-2" data-tilt data-tilt-glare data-tilt-max-glare="0.1" data-tilt-max="50"
+            data-tilt-speed="500" data-tilt-perpective="1000">
+                <div class="service-card-icon">
+                    <i class="far fa-user "></i>
+                </div>
+                <div class="main-service-card-title">
+                    <h5>Sistemas Web</h5>
+                </div>
+                <div class="main-service-card-text">
+                    Toda empresa precisa de um sitema web para se diferenciar no mercado e tornar-se dia a
+                    dia
+                    mais
+                    lucrativa com maior gereação de resultados e eficiência
+                </div>
+                <div class="main-service-card-button">
+                    <a class="button" href="#">Saiba mais</a>
+                </div>
+
+            </div>
+            <div class="main-service-card" id="card-3" data-tilt data-tilt-glare data-tilt-max-glare="0.1" data-tilt-max="50"
+            data-tilt-speed="500" data-tilt-perpective="1000">
+                <div class="main-service-card-icon">
+                    <i class="far fa-bell"></i>
+                </div>
+                <div class="main-service-card-title">
+                    <h5>Consultoria</h5>
+                </div>
+                <div class="main-service-card-text">
+                    Quero ajudar você a decolar seu negócio com ideias inovadoras, e melhorar seu fluxo de
+                    caixa
+                    diminuindo custos e aumento de faturamento com os melhores framework de gestão
+                </div>
+                <div class="main-service-card-button">
+                    <a class="button" href="#">Saiba mais</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="main-hire">
+            <div class="main-hire-text">
+                Que tal Fazer sites lindos ou sistemas lucrativos ?
+            </div>
+            <div class="main-hire-buttom">
+                <a class="buttom" href="#">Contrate-me</a>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+
+        <p class="footer-title">Eliseu Sobral Santos</p>
+        <p class="footer-subtitle">Me siga nas redes sociais</p>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-end">Copy right &copy By Eliseu Sobral Santos</p>
+
+    </footer>
+
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+       
+    </script>
+</body>
+
+</html>

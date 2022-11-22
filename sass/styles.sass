@@ -1,0 +1,320 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    font-family: 'Josefin Sans', sans-serif
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: variables.$bg-color
+    color: variables.$text-color
+
+    a
+        color: variables.$text-color
+        text-decoration: none
+        transition: .4s
+    ul
+        list-style: none
+    span
+        color: variables.$text-green
+
+.header
+    display: flex
+    justify-content: space-between
+    @include mixins.container
+    h2
+        font-size: 4rem
+    span
+        color: variables.$text-green
+    &-logo
+        color: variables.$text-color
+    &-navbar 
+        ul
+            height: 100%
+            @include mixins.flex-center
+            @include mixins.mobile
+                padding-left: 1rem 
+                display: none 
+
+        li
+            margin: 0 1rem
+            text-transform: uppercase
+            font-size: 1rem
+        
+        .active
+            color: variables.$text-green
+        
+        a
+            &:hover
+                color: variables.$text-green
+    &-sanduiche
+        @include mixins.mobile 
+            display: block
+            margin-right: 1rem
+        width: 2rem
+        margin-top: 1.25rem
+        text-align: center
+        font-size: 2rem
+        display: none
+    
+        
+
+.main
+    @include mixins.container
+    flex-direction: row
+    
+    &-container 
+        @include mixins.mobile
+            display: flex
+            flex-direction: column
+        background-position: center
+        background-size: cover
+        display: flex
+        align-items: center
+        margin-top: 0
+        
+    &-preset
+        @include mixins.mobile
+
+        height: 500px
+        
+        h4 
+            color: variables.$text-color
+            font-size: 2rem
+            margin-top: 5rem
+        h1 
+            font-size: 4rem
+            margin: 0
+        form
+            width: 450px
+            height: 50px
+        .send
+            margin: 0
+            color: variables.$text-color
+            background-color: variables.$btn-color
+            outline: none
+            border: none
+            height: 50px
+            width: 94px
+            font-size: 1.4rem
+            font-weight: bold
+            &:hover
+                background-color: variables.$text-green
+                box-shadow: 0 0 12px variables.$text-green,0 0 12px variables.$text-green,0 0 12px variables.$text-green,0 0 12px variables.$text-green,0 0 12px variables.$text-green,
+        .email
+            
+            width: 350px
+            height: 50px
+            padding: 5px 5px 5px 15px
+            outline: none
+    
+        
+        
+    img
+        max-width: 80%
+        margin-top: 50px
+    &-section 
+        @include mixins.flex-center
+        @include mixins.mobile
+            justify-content: center
+            align-items: center
+            text-align: center
+            flex-direction: column   
+    &-carddesc
+        h2 
+            text-transform: capitalize
+            font-size: 5rem
+            font-weight: bold
+                
+                    
+        h5 
+            font-size: 1.6rem
+                
+
+        &-text 
+                        
+            letter-spacing: 0.1rem
+            font-size: 1.1rem
+            margin-bottom: 2rem
+            font-weight: bold
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+        &-button
+            input
+                text-align: center
+                width: 200px
+                background-color: variables.$btn-color
+                text-decoration: none
+                color: variables.$text-color
+                font-weight: bold
+                
+                border-radius: 1.5rem
+                transition: .4s
+                font-size: 1.1rem
+                height: 50px
+
+                &:hover
+                    background-color: transparent
+                    border: 0.1rem solid variables.$btn-color
+                    cursor: pointer
+                    box-shadow:0 0 12px variables.$btn-color,0 0 12px variables.$btn-color,0 0 12px variables.$btn-color,0 0 12px variables.$btn-color
+    &-service
+        margin-top: 5rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        &-card 
+            @include mixins.mobile
+                width: 90%
+                justify-content: center
+                align-items: center
+            width: 30%
+            height: 450px
+            padding: 20px 35px
+            background: variables.$sec-bg-color
+            border-radius: 20px
+            margin: 15px
+            overflow: hidden
+            text-align: center
+            transform-style: preserve-3d
+
+            &:hover
+                transform: scale(1.1)
+                box-shadow: 0 0 35px variables.$text-green, 0 0 35px variables.$text-green, 0 0 35px variables.$text-green, 0 0 35px variables.$text-green, 0 0 35px variables.$text-green
+            
+            i
+                font-size: 2.5rem
+                display: block
+                text-align: center
+                margin: 25px 0px
+                color: variables.$text-color
+
+            .button
+
+                background-color: variables.$btn-color
+                color: variables.$text-color
+                text-decoration: none
+                border: 2px solid transparent
+                font-weight: bold
+                padding: 9px 22px
+                border-radius: 30px
+                transition: .4s
+
+                &:hover
+                    background-color: transparent
+                    border: 2px solid variables.$btn-color
+                    cursor: pointer
+                    box-shadow:0 0 12px variables.$btn-color,0 0 12px variables.$btn-color,0 0 12px variables.$btn-color,0 0 12px variables.$btn-color
+
+            &-text 
+                
+                font-size: 1rem
+                margin-bottom: 2rem
+
+            h5
+                font-size: 1.7rem
+                margin-bottom: 1rem
+                color: variables.$text-green
+
+    &-hire 
+        width: 100%
+        height: 290px
+        background: variables.$sec-bg-color
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        @include mixins.mobile
+            text-align: center
+
+        &-text 
+            font-size: 2rem
+            font-weight: bold
+            margin-bottom: 25px
+        .buttom 
+            background-color: variables.$btn-color
+            text-decoration: none
+            border: 2px solid transparent
+            font-weight: bold
+            padding: 13px 30px
+            border-radius: 30px
+            transition: .4s
+            font-size: 1.2rem
+            color: variables.$text-color
+            &:hover
+                background-color: transparent
+                border: 2px solid variables.$btn-color
+                cursor: pointer
+                box-shadow:0 0 12px variables.$btn-color,0 0 12px variables.$btn-color,0 0 12px variables.$btn-color,0 0 12px variables.$btn-color
+
+
+.footer
+    background-color: variables.$bg-color
+    width: 100%
+    height: 400px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &-title 
+        font-size: 2rem
+        font-weight: bold
+    &-subtitle
+        font-weight: bold
+    &-social
+        display: flex
+        text-align: center
+        align-items: center
+        a 
+            display: flex
+            width: 45px
+            height: 45px
+            align-items: center
+            text-align: center
+            justify-content: center
+            background: variables.$btn-color
+            border-radius: 50%
+            margin: 22px 10px
+            color: white
+            text-decoration: none
+            font-size: 20px
+
+            &:hover
+                transform: scale(1.4)
+                transition: .3s
+
+.js-tilt-glare
+    border-radius: 30px
+	
+
+        
+
+            
+
+   
+    
+        
+        
+        
+
+    
+        
+        
+
+        
+                
+
+
+
+
+
+        
+      
+        
+        
+
+    
