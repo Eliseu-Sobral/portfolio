@@ -75,7 +75,7 @@ body span {
 }
 .header-sanduiche label {
   position: absolute;
-  z-index: 9999;
+  z-index: 9990;
 }
 .header-sanduiche input[type=checkbox]:checked ~ nav {
   transform: translateX(240px);
