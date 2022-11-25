@@ -32,7 +32,7 @@
 <body>
     <header class="header">
         <h2 class="header-logo">Portfo<span>lio</span></h2>
-        <nav class="header-navbar">
+        <nav class="header-navbar" >
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -42,16 +42,28 @@
             </ul>
         </nav>
         <div class="header-sanduiche">
-            <div>
+            <input type="checkbox" id="check" style="display: none;">
+            <label for="check" onclick="buttonsanduiche()">
                 <i class="fas fa-bars"></i>
-            </div>
+            </label>
+            
         </div>
+        <nav class="header-navbar2" id="nav2" >
+            <input type="checkbox" id="check" style="display: none;">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Conhecimentos</a></li>
+                <li><a href="#">Fale comigo</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="main">
         <div class="main-container">
             <div class="main-preset">
                 <h4>Olá, meu nome é </h4>
-                <h1>Eliseu <span>Sobral</span></h1>
+                <h1 id="eu">Eliseu <span>Sobral</span></h1>
                 <h3>Eu sou programador</h3>
                 <form method="post">
                     <input type="email" name="email" id="mail" placeholder="Digite seu email" class="email">
@@ -176,7 +188,17 @@
 
     <script src="vanilla-tilt.min.js"></script>
     <script type="text/javascript">
-        
+        function buttonsanduiche(){
+            var btnsand = document.getElementById('check')
+            var nav2 = document.getElementById('nav2')
+            
+            if(document.getElementById('check').checked){
+                nav2.style.transform = 'translateX(240px)';
+                
+            }else{
+                nav2.style.transform = 'translateX(-240px)';
+            }
+        }
     </script>
 </body>
 

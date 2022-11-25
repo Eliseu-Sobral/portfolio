@@ -2,7 +2,7 @@
 @use 'mixins'
 
 *
-    font-family: 'Josefin Sans', sans-serif
+    font-family: 'ubuntu', sans-serif
     padding: 0
     margin: 0
     box-sizing: border-box
@@ -58,6 +58,51 @@ body
         text-align: center
         font-size: 2rem
         display: none
+        label
+            position: absolute
+            z-index: 9999
+        input[type="checkbox"]:checked ~ nav
+                transform: translateX(240px)
+        
+
+    &-navbar2
+        background-color: variables.$navbar-2color
+        height: 100%
+        width: 240px
+        position: absolute
+        right: -240px
+        top: 0px
+        z-index: 8010
+        input[type="checkbox"]:checked ~ nav
+            transform: translateX(240px)
+        
+        ul
+            position: absolute
+            top: 100px
+            
+            text-decoration: none
+            width: 100%
+            &:hover
+                
+                
+            li
+                padding: 1.2rem 
+                font-size: 1.5rem
+                text-decoration: none
+                height: 100%
+                width: 100%
+                &:hover
+                    background-color: variables.$back-color-navbar
+                    
+                
+                a
+                    
+                    &:hover
+                        text-decoration: none
+                        color: white
+                        
+
+                    
     
         
 
@@ -272,7 +317,7 @@ body
             position: fixed
             bottom: 20px
             right: 20px
-            z-index: 9999
+            z-index: 8000
             display: flex
             flex-direction: column
             align-items: center
